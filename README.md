@@ -1,4 +1,4 @@
-# JSFUCK Converter
+# JSFuck Converter
 
 Link to the website: https://jsfuck-converter.web.app/
 

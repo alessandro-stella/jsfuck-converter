@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JSFuck Converter</title>
+        <link rel="stylesheet" href="style.css" />
+        <script type="module" src="script.js" defer></script>
+    </head>
+
+    <body>
+        <div id="root">
+            <div class="title">JSFuck converter</div>
+
+            <div class="main-container">
+                <textarea
+                    name="input"
+                    id="input"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+                <button onclick="convertJSFUCK()">CONVERT</button>
+                <textarea
+                    name="output"
+                    id="output"
+                    cols="30"
+                    rows="10"
+                ></textarea>
+            </div>
+
+            <div id="length"></div>
+            <div class="copy-result" onclick="copyResult()">Copy</div>
+
+            <div class="check-eval">
+                <input
+                    type="checkbox"
+                    onchange="if(this.checked) convertJSFUCK()"
+                    id="eval"
+                />
+                <label for="eval">Add eval to string</label>
+            </div>
+        </div>
+    </body>
+</html>
